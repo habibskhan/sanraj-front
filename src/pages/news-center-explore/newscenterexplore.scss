@@ -1,0 +1,22 @@
+.news-center-explore {
+  padding: 7.5em 0 9.325em;
+
+  .section_heading32 {
+    line-height: 1.5;
+    margin-top: 0.25em;
+  }
+
+  .desc_wrapper {
+    flex-direction: column;
+    .section_desc20 {
+      margin-bottom: 1.5em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      span {
+        color: #000000;
+        font-weight: 600;
+      }
+    }
+  }
+}

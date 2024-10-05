@@ -1,0 +1,100 @@
+.who_row {
+  margin: 0 auto;
+  .who_col {
+    padding: 0;
+    &:nth-child(2) {
+      padding-left: 0.25em;
+    }
+    .content_wrapper {
+      .section_heading60 {
+        padding: 0 1em 1em 0;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.4);
+      }
+      .section_desc20 {
+        width: 100%;
+        max-width: 71.86%;
+      }
+      .desc_wrapper {
+        padding: 3.75em 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+      .news_img {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 3.75em;
+      }
+    }
+// background-image: url("../../images/news-center/press/final-file-Rajdipkumar.pdf");
+    .news_inner_cta {
+      margin-top: 1.5em;
+    }
+  }
+}
+
+// @media (max-width: 1080px) {
+//   .who_row {
+//     .who_col {
+//       .content_wrapper {
+//         .section_desc20 {
+//           max-width: 39em;
+//         }
+//       }
+//     }
+//   }
+// }
+
+@media (max-width: 991px) {
+  .who_row {
+    .who_col {
+      &:nth-child(2) {
+        padding-left: 0;
+      }
+      .content_wrapper {
+        .section_heading60 {
+          padding: 0 0 1em 0;
+        }
+        .section_heading32 {
+          margin-bottom: 1.25em;
+        }
+        .section_desc20 {
+          max-width: 100%;
+        }
+        .desc_wrapper {
+          flex-direction: column;
+          align-items: flex-start;
+          .comm_cta_sec1 {
+            margin-top: 2.5em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .who_row {
+    .who_col {
+      .content_wrapper {
+        .section_heading60 {
+          padding: 0 0 0.8572em 0;
+        }
+        .section_heading32 {
+          margin-bottom: 1.1em;
+        }
+        .desc_wrapper {
+          padding-top: 2.4em;
+        }
+        .desc_wrapper {
+          .comm_cta_sec1 {
+            width: 100%;
+          }
+        }
+        .news_img { 
+          margin-top: 2.4em;
+        }
+      }
+    }
+  }
+}

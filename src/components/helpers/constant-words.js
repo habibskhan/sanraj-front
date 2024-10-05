@@ -1,0 +1,19 @@
+// routes name
+export const homeUrl = "/";
+export const ourCompanyUrl = "/our-company";
+export const teamManagementUrl = "/management-team";
+export const galleryUrl = "/gallery";
+export const sportsUrl = "/sports";
+export const investmentUrl = "/investments";
+export const contactusUrl = "/contact-us";
+export const careersUrl = "/careers";
+export const csrinitiativesUrl = "/csr-initiatives";
+export const newsCenterUrl = "/news-centre";
+export const newsCenterDetailsUrl = "/news-center/:id";
+export const hospitalityUrl = "/hospitality";
+export const termsUrl = "/terms-and-conditions";
+export const privacyyUrl = "/privacy-policy";
+export const healthcareUrl = '/healthcare';
+export const renewableEnergyUrl = '/renewable-energy';
+export const infrastructureUrl = '/infrastructure';
+export const informationTechnologyUrl = '/information-Technology';

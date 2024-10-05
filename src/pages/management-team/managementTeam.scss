@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+
+.management-team {
+  padding: 7.5em 0 9.375em;
+
+  .team_sec3 {
+    padding: 5em 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .management-team {
+    .who_row {
+      .who_col {
+        .content_wrapper {
+          .section_heading32 {
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .management-team {
+    padding: 6em 0 6.9em;
+    .my_container {
+      padding: 0 16px;
+    }
+    .team_sec3 {
+      padding: 2.4em 1.6em 0;
+    }
+  }
+}
+
+// @media (max-width: 531px) {
+//   .management-team {
+//     padding-inline: 1em;
+//   }
+// }

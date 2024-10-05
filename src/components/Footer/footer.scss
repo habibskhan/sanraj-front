@@ -1,0 +1,266 @@
+.footer_wrapper {
+  background-color: #000000;
+  padding: 7.5em 0 2.25em;
+  position: relative;
+
+  .scroll_up {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    .up_arrow {
+      width: 100%;
+      max-width: 5.125em;
+    }
+  }
+  .footer_row {
+    margin: 0 auto;
+    padding-bottom: 5em;
+    border-bottom: 1px solid rgba($color: #bb9532, $alpha: 0.6);
+    .footer_col {
+      padding: 0;
+      &:nth-child(2) {
+        text-align: center;
+      }
+      &:nth-child(3) {
+        text-align: right;
+      }
+      .footer_data {
+        .link_wrapper {
+          display: block;
+          &.active {
+            display: block;
+          }
+        }
+        .contact_wrapper {
+          margin-bottom: 2.5em;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &:nth-child(2) {
+            .footer_link {
+              margin-bottom: 0;
+            }
+          }
+        }
+        .footer_sec_title {
+          display: block;
+          color: #ffffff;
+          font-size: 1.375em;
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
+          letter-spacing: 0px;
+          line-height: 1.4545;
+          text-transform: uppercase;
+          margin-bottom: 1.091em;
+        }
+        .numb_wrapper {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+        .footer_link {
+          display: block;
+          color: rgba($color: #ffffff, $alpha: 0.4);
+          font-size: 1.375em;
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
+          letter-spacing: 0px;
+          line-height: 1.4545;
+          margin-bottom: 0.91em;
+          // &:last-child {
+          //   margin-bottom: 0;
+          // }
+          .link_text {
+            position: relative;
+            &:hover {
+              color: rgba($color: #ffffff, $alpha: 1);
+              &::before {
+                width: 100%;
+                transition: width 0.3s ease;
+              }
+            }
+            &::before {
+              content: "";
+              background-color: rgba($color: #ffffff, $alpha: 1);
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 0;
+              height: 1px;
+              transition: width 0.3s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .copy_row {
+    padding-top: 2em;
+    margin: 0 auto;
+    .copy_col {
+      padding: 0;
+
+      .copy_text {
+        color: #ffffff;
+        font-size: 1em;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        letter-spacing: 0px;
+        line-height: normal;
+        opacity: 0.6;
+
+        .link {
+          color: inherit;
+        }
+        br {
+          display: none;
+        }
+      }
+
+      .social_media_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        .social_link {
+          margin-right: 2.46em;
+          .social_icon {
+            max-width: 1.5em;
+            object-fit: contain;
+          }
+          .fb_icon {
+            max-width: 0.782em;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .privacy_wrapper {
+        color: #ffffff;
+        opacity: 0.6;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .privacy_link {
+          font-size: 1em;
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
+          letter-spacing: 0px;
+          line-height: normal;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer_wrapper {
+    .footer_row {
+      border-bottom: none;
+      padding-bottom: 0;
+      .footer_col {
+        &:nth-child(1) {
+          .footer_data {
+            padding-top: 0;
+          }
+        }
+        &:nth-child(2) {
+          text-align: left;
+        }
+        &:nth-child(3) {
+          text-align: left;
+          .footer_data {
+            border-bottom: none;
+          }
+        }
+        .footer_data {
+          border-bottom: 0.5px solid rgba($color: #ffffff, $alpha: 0.4);
+          padding: 2em 0;
+          .numb_wrapper {
+            justify-content: flex-start;
+          }
+          .link_wrapper {
+            display: none;
+            &.active {
+              display: block;
+            }
+          }
+          .footer_sec_title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.6em;
+            letter-spacing: 0px;
+            line-height: normal;
+            margin-bottom: 0.75em;
+            .plus_icon {
+              width: 100%;
+              max-width: 1.125em;
+            }
+          }
+
+          .footer_link {
+            font-size: 1.6em;
+            letter-spacing: 0px;
+            line-height: normal;
+            margin-bottom: 0.75em;
+          }
+          .contact_wrapper {
+            margin-bottom: 2.4em;
+          }
+        }
+      }
+    }
+
+    .copy_row {
+      padding-top: 0.4em;
+      .copy_col {
+        .social_media_wrapper {
+          justify-content: flex-start;
+          align-items: center;
+          padding-bottom: 2.4em;
+          border-bottom: 0.5px solid rgba($color: #ffffff, $alpha: 0.4);
+          .social_link {
+            margin-right: 2.6em;
+            .social_icon {
+              max-width: 1.9em;
+            }
+            .fb_icon {
+              max-width: 0.8em;
+            }
+          }
+        }
+        .privacy_wrapper {
+          justify-content: flex-start;
+          padding: 2.4em 0;
+          margin-bottom: 1.2em;
+          border-bottom: 0.5px solid #bb9532;
+          .privacy_link {
+            font-size: 1.6em;
+            letter-spacing: 0px;
+            line-height: normal;
+            &:nth-child(1) {
+              margin-right: 0.25em;
+            }
+            &:nth-child(3) {
+              margin-left: 0.25em;
+            }
+          }
+        }
+        .copy_text {
+          font-size: 1.4em;
+          letter-spacing: 0px;
+          line-height: 1.715;
+          br {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

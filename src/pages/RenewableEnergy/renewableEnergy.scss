@@ -1,0 +1,24 @@
+@import "../../styles/common.scss";
+
+.renewable_energy_sec1 {
+  padding: 7.5em 0 0;
+}
+
+.renewable_energy_sec2 {
+  padding: 5em 0 11.875em;
+}
+
+@media (max-width: 767px) {
+  .renewable_energy_sec1 {
+    padding: 6em 0 0;
+    .my_container {
+      padding: 0 16px;
+    }
+  }
+  .renewable_energy_sec2 {
+    padding: 6em 0 6em;
+    .my_container {
+      padding: 0 16px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import "../../styles/variables";
+
+.mission-vision-philosophy {
+  display: flex;
+  justify-content: space-between;
+
+  .mvp-card {
+    flex: 1;
+    margin: 0 1em;
+    padding: 2em;
+    background-color: #fff;
+
+    .icon {
+      height: 5.1875em;
+    }
+
+    .title {
+      color: $primary-color;
+      margin-block: 0.5em;
+      font-size: 2em;
+    }
+
+    .content {
+      font-size: 1.25em;
+      line-height: 1.6;
+      opacity: 0.6;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 0;
+    flex-direction: column;
+    row-gap: 2em;
+
+    .mvp-card {
+      margin: 0;
+      padding: 1em;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .mission-vision-philosophy {
+    row-gap: 2.4em;
+    .mvp-card {
+      .title {
+        font-size: 2em;
+      }
+      .content {
+        font-size: 1.6em;
+      }
+    }
+   
+  }
+}

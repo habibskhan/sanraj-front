@@ -1,0 +1,206 @@
+@import "../../styles/variables";
+
+.our-company {
+  padding: 7.5em 0 0;
+
+  .company_sec3 {
+    padding: 6.25em 0 0;
+  }
+
+  .company_sec4 {
+    padding: 9.375em 0 0;
+  }
+
+  .card-section {
+    padding: 9.375em 0;
+
+    .row {
+      margin-bottom: 5em;
+    }
+  }
+
+  .leadership-heading {
+    padding: 4em 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 4em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+
+    .title {
+      color: $primary-color;
+      margin-bottom: 2rem;
+      font-size: 2em;
+    }
+
+    .content {
+      max-width: 900px;
+      font-size: 1.5em;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+    }
+  }
+
+  .company_slider_sec {
+    padding: 9.375em 0 0;
+    .head_wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    .company_slider {
+      padding: 3.4375em 0 0;
+      position: relative;
+      .swiper-slide {
+        height: auto;
+      }
+    }
+    .news_box {
+      border: 1px solid #00000033;
+      padding: 1.0625em 1.375em 2em;
+      height: 100%;
+      .img_wrapper {
+        overflow: hidden;
+        &:hover {
+          .news_img {
+            transform: scale(1.1);
+            transition: 0.5s ease;
+          }
+        }
+      }
+      .news_img {
+        width: 100%;
+        max-width: 100%;
+        transform: scale(1);
+        transition: 0.5s ease;
+      }
+      .news_content {
+        padding: 1.03125em 0 0;
+        margin: 1.282em 0 0;
+        position: relative;
+        &::before {
+          content: "";
+          background-color: #00000033;
+          position: absolute;
+          left: -1.375em;
+          top: 0;
+          width: calc(100% + 2.75em);
+          height: 1px;
+        }
+        .section_desc20 {
+          color: #000000;
+          font-weight: 500;
+          font-family: "Poppins", sans-serif;
+        }
+      }
+    }
+
+    .company_arrows {
+      display: flex;
+      align-items: center;
+      user-select: none;
+      -webkit-user-select: none;
+      .arrow_wrapper_left,
+      .arrow_wrapper_right {
+        border: 1px solid #bb9532;
+        background: #f5f5f5;
+        box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+        width: 3.75em;
+        height: 3.75em;
+        position: relative;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &:nth-child(1) {
+          margin-right: 1em;
+        }
+      }
+      .left_arrow,
+      .right_arrow {
+        border-radius: 50%;
+        width: 100%;
+        max-width: 1.25em;
+        object-fit: contain;
+      }
+      .left_arrow {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .our-company {
+    .who_row {
+      .who_col {
+        .content_wrapper {
+          .section_heading32 {
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .our-company {
+    padding: 6em 0 0;
+    .my_container {
+      padding: 0 16px;
+    }
+    .company_sec3 {
+      padding: 2.4em 1.6em 0;
+    }
+    .company_slider_sec {
+      padding: 6em 0 0;
+      .company_slider {
+        padding: 2.4em 0 0;
+      }
+    }
+    .card-section {
+      padding: 6em 0 6.9em;
+     .row {
+      margin-bottom: 2.4em;
+     }
+    }
+  }
+  .company_slider_sec {
+    .company_slider {
+      padding: 2.4em 0 0;
+    }
+    .news_box {
+      padding: 1.2em 1.2em;
+      .news_content {
+        padding-top: 1.2em;
+        margin-top: 1.2em;
+      }
+    }
+    .company_arrows {
+      justify-content: center;
+      margin-top: 2.8em;
+      .arrow_wrapper_left,
+      .arrow_wrapper_right {
+        width: 5.2em;
+        height: 5.2em;
+      }
+      .left_arrow,
+      .right_arrow {
+        max-width: 1.8em;
+      }
+    }
+  }
+}
+
+@media (max-width: 531px) {
+  .company_sec3,
+  .company_sec4 {
+    padding-inline: 2em;
+  }
+}
